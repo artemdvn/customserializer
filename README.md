@@ -1,5 +1,5 @@
 **Custom serializer**
-
+``````
 Benchmark test results:
 
 # Run complete. Total time: 00:06:45
