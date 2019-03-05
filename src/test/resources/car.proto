@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package protobuf;
+option java_package = "com.github.artemdvn.domain";
+
+message Car {
+    string model = 1;
+    int32 power = 2;
+    EngineType engineType = 3;
+    bool used = 4;
+    repeated CarOption options = 5;
+    map<string, double> mileage = 6;
+
+    enum EngineType {
+        GASOLINE = 0;
+        DIESEL = 1;
+        HYBRID = 2;
+        ELECTRIC = 3;
+    }
+}
+
+message CarOption {
+    string option = 1;
+    double price = 2;
+}
